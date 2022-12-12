@@ -1,5 +1,5 @@
 // Start of UML-model
-=== Pakke: «ApplicationSchema» FKB-AR5-5.0
+=== Pakke: «ApplicationSchema» FKB-AR5-5.0.1
 *Definisjon:* Datamodell for produktspesifikasjonen FKB-AR5. AR5 er et datasett som klassifiserer arealressuresene til alt areal ut fra arealtype (bebygd areal, dyrka mark, skog osv.), grunnforhold og bonitet.
  
 [discrete]
@@ -37,7 +37,7 @@
 |http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-AR5/5.0
  
 |version
-|5.0
+|5.0.1
  
 |xmlns
 |app
@@ -230,20 +230,6 @@ SOSI_navn: VERIFISERINGSDATO +
 [cols="20,80"]
 |===
 |*Rollenavn:* 
-|*avgrensesAvArealressursGrenseFiktiv*
- 
-|Definisjon:
-|Krav til delt flategeometri. Avgrensning av Arealressursflate ved hjelp av bygningsdelelinje
- 
-|Multiplisitet: 
-|[0..*]
- 
-|Til klasse
-|<<arealressursgrensefiktiv,«featureType» ArealressursGrenseFiktiv>>
-|===
-[cols="20,80"]
-|===
-|*Rollenavn:* 
 |*avgrensesAvArealressursGrense*
  
 |Definisjon:
@@ -254,6 +240,20 @@ SOSI_navn: VERIFISERINGSDATO +
  
 |Til klasse
 |<<arealressursgrense,«featureType» ArealressursGrense>>
+|===
+[cols="20,80"]
+|===
+|*Rollenavn:* 
+|*avgrensesAvArealressursGrenseFiktiv*
+ 
+|Definisjon:
+|Krav til delt flategeometri. Avgrensning av Arealressursflate ved hjelp av bygningsdelelinje
+ 
+|Multiplisitet: 
+|[0..*]
+ 
+|Til klasse
+|<<arealressursgrensefiktiv,«featureType» ArealressursGrenseFiktiv>>
 |===
  
 [discrete]
@@ -348,7 +348,7 @@ SOSI_navn: VERIFISERINGSDATO +
 |*kvalitet*
  
 |Definisjon: 
-|	
+|
 beskrivelse av kvaliteten på stedfestingen
  
 |Multiplisitet: 
@@ -736,7 +736,7 @@ SOSI_navn: DATAFANGSTDATO +
 |<<registreringsversjon,«CodeList» Registreringsversjon>>
 |Profilparametre i tagged values: 
 |
-defaultCodeSpace:  + 
+defaultCodeSpace: https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/registreringsversjon + 
 SOSI_navn: REGISTRERINGSVERSJON + 
 |===
 [cols="20,80"]
@@ -787,9 +787,9 @@ SOSI_navn: OPPHAV +
 [cols="20,80"]
 |===
 |Subtyper:
-|<<arealressursflate,«featureType» ArealressursFlate>> +
+|<<arealressursgrense,«featureType» ArealressursGrense>> +
 <<arealressursgrensefiktiv,«featureType» ArealressursGrenseFiktiv>> +
-<<arealressursgrense,«featureType» ArealressursGrense>> +
+<<arealressursflate,«featureType» ArealressursFlate>> +
 |Realisering av: 
 |«ApplicationSchema» Generelle typer 5.1/SOSI_Fellesegenskaper og SOSI_Objekt::«FeatureType» SOSI_Objekt +
 |===
