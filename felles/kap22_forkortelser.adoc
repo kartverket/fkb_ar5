@@ -1,5 +1,5 @@
 
-*AR5*: Arealressurskart i målestokk 1:5000
+*AR5*: Detaljert arealressurskart 
 
 [#DOK]
 *DOK*: Det offentlige kartgrunnlaget. DOK er offentlige geografiske data som er tilrettelagt for kommunenes plan- og byggesaksarbeid. DOK er definert i <<PBL-KART>>.
