@@ -277,7 +277,7 @@ GML-realiseringen følger kravene i "Realisering i GML-format 5.0" <<SOSI-GML>>.
 
 SOSI-realiseringen følger kravene i "Realisering i SOSI-foramt 5.0" <<SOSI-FORMAT>>. Under en utlisting av SOSI-formatrealiseringen:
 
-include::RealiserteObjekttyper.adoc[]
+include::SOSIformatRealisering.adoc[]
 
 [appendix]
 == Lovlige egenskapskombinasjoner

@@ -3403,288 +3403,391 @@ Se verdier for opphav i egen kodeliste på <a href="https://register.geonorge.no
 <div class="paragraph">
 <p>SOSI-realiseringen følger kravene i "Realisering i SOSI-foramt 5.0" <a href="#SOSI-FORMAT">[SOSI-FORMAT]</a>. Under en utlisting av SOSI-formatrealiseringen:</p>
 </div>
-<h5 id="_fkb_ar5_5_1featuretype_arealressursflate" class="discrete">FKB-AR5-5.1::«featureType» ArealressursFlate</h5>
+<h5 id="_fkb_ar5_5_1featuretype_arealressursflate" class="discrete">FKB-AR5-5.1::�featureType� ArealressursFlate</h5>
+<div class="paragraph">
+<p><strong>Avgrenses av: </strong>ArealressursGrense, ArealressursGrenseFiktiv</p>
+</div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 40%;">
-<col style="width: 40%;">
-<col style="width: 20%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 12.5%;">
+<col style="width: 25%;">
+<col style="width: 12.5%;">
 </colgroup>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Type</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Mult.</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOSI-navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOSI-type</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Identifikasjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">�dataType� Identifikasjon</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..IDENT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.lokalId</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;LOKALID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.navnerom</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;NAVNEROM</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.versjonId</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;VERSJONID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">oppdateringsdato</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">DateTime</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..OPPDATERINGSDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATOTID</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">sluttdato</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">DateTime</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..SLUTTDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATOTID</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">datafangstdato</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..DATAFANGSTDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">registreringsversjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Registreringsversjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">�CodeList� Registreringsversjon</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..REGISTRERINGSVERSJON</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T10</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">informasjon</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..INFORMASJON</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T255</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">opphav</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Opphav</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">�CodeList� Opphav</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..OPPHAV</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T5</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">område</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">GM_Surface</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">.FLATE</p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">posisjon</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">GM_Point</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">.PUNKT</p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">arealtype</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» ArealressursArealtype</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">�CodeList� ArealressursArealtype</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..ARTYPE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">H2</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">treslag</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» ArealressursTreslag</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">�CodeList� ArealressursTreslag</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..ARTRESLAG</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">H2</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">skogbonitet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» ArealressursSkogbonitet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">�CodeList� ArealressursSkogbonitet</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..ARSKOGBON</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">H2</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">grunnforhold</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» ArealressursGrunnforhold</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">�CodeList� ArealressursGrunnforhold</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..ARGRUNNF</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">H2</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">klassifiseringsmetode</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Klassifiseringsmetode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">�CodeList� Klassifiseringsmetode</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..KLASSIFISERINGSMETODE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T10</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">verifiseringsdato</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Rolle: </strong>avgrensesAvArealressursGrense</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«featureType» ArealressursGrense</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..*]</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Rolle: </strong>avgrensesAvArealressursGrenseFiktiv</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«featureType» ArealressursGrenseFiktiv</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[0..*]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..VERIFISERINGSDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_fkb_ar5_5_1featuretype_arealressursgrense" class="discrete">FKB-AR5-5.1::«featureType» ArealressursGrense</h5>
+<h5 id="_fkb_ar5_5_1featuretype_arealressursgrense" class="discrete">FKB-AR5-5.1::�featureType� ArealressursGrense</h5>
+<div class="paragraph">
+<p><strong>Avgrenser: </strong>ArealressursFlate</p>
+</div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 40%;">
-<col style="width: 40%;">
-<col style="width: 20%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 12.5%;">
+<col style="width: 25%;">
+<col style="width: 12.5%;">
 </colgroup>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Type</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Mult.</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOSI-navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOSI-type</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Identifikasjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">�dataType� Identifikasjon</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..IDENT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.lokalId</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;LOKALID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.navnerom</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;NAVNEROM</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.versjonId</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;VERSJONID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">oppdateringsdato</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">DateTime</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..OPPDATERINGSDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATOTID</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">sluttdato</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">DateTime</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..SLUTTDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATOTID</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">datafangstdato</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..DATAFANGSTDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">registreringsversjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Registreringsversjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">�CodeList� Registreringsversjon</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..REGISTRERINGSVERSJON</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T10</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">informasjon</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..INFORMASJON</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T255</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">opphav</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Opphav</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">�CodeList� Opphav</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..OPPHAV</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T5</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">grense</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">GM_Curve</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">.KURVE</p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">avgrensingType</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» ArealressursAvgrensingType</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">�CodeList� ArealressursAvgrensingType</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..ARAVGRTYPE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">H4</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">verifiseringsdato</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..VERIFISERINGSDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Posisjonskvalitet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">�dataType� Posisjonskvalitet</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..KVALITET</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.datafangstmetode</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Datafangstmetode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">�CodeList� Datafangstmetode</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;DATAFANGSTMETODE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T3</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.nøyaktighet</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;NØYAKTIGHET</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">H6</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">kvalitet.synbarhet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Synbarhet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">�CodeList� Synbarhet</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;SYNBARHET</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">H1</p></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_fkb_ar5_5_1featuretype_arealressursgrensefiktiv" class="discrete">FKB-AR5-5.1::«featureType» ArealressursGrenseFiktiv</h5>
+<h5 id="_fkb_ar5_5_1featuretype_arealressursgrensefiktiv" class="discrete">FKB-AR5-5.1::�featureType� ArealressursGrenseFiktiv</h5>
+<div class="paragraph">
+<p><strong>Avgrenser: </strong>ArealressursFlate</p>
+</div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 40%;">
-<col style="width: 40%;">
-<col style="width: 20%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 12.5%;">
+<col style="width: 25%;">
+<col style="width: 12.5%;">
 </colgroup>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Type</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Mult.</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOSI-navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOSI-type</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«dataType» Identifikasjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">�dataType� Identifikasjon</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..IDENT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.lokalId</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;LOKALID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.navnerom</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;NAVNEROM</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">identifikasjon.versjonId</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;VERSJONID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T100</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">oppdateringsdato</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">DateTime</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..OPPDATERINGSDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATOTID</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">sluttdato</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">DateTime</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..SLUTTDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATOTID</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">datafangstdato</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..DATAFANGSTDATO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DATO</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">registreringsversjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Registreringsversjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">�CodeList� Registreringsversjon</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..REGISTRERINGSVERSJON</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T10</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">informasjon</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[0..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..INFORMASJON</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T255</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">opphav</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«CodeList» Opphav</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">�CodeList� Opphav</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">..OPPHAV</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">T5</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">grense</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">GM_Curve</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[1..1]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">.KURVE</p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 </table>
@@ -4519,7 +4622,7 @@ av denne lisensen og ikke kan viderebrukes</p>
 <div id="footer">
 <div id="footer-text">
 Versjon 5.1<br>
-Last updated 2024-04-23 08:34:20 +0200
+Last updated 2024-04-24 10:55:17 +0200
 </div>
 </div>
 </body>
