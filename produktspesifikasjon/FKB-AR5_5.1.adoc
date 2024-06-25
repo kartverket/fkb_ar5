@@ -1,10 +1,10 @@
 :datasett: FKB-AR5
-:publisert: 2024-05-01
+:publisert: 2024-07-01
 :versjon: 5.1
 :skjemaversjon: 5.1
 :versjon-forrige: 5.0
 :versjon-erstattet-av: 5.1
-:underversjon: 2024-05-01
+:underversjon: 2024-07-01
 :underversjon-forrige: 2022-01-01
 :metadata-url: https://kartkatalog.geonorge.no/metadata/fkb-ar5/166382b4-82d6-4ea9-a68e-6fd0c87bf788
 :dokumentstatus: 1
@@ -265,6 +265,14 @@ include::../felles/kap13_metadata.adoc[]
 
 
 [appendix]
+== SOSI-format-realisering
+
+SOSI-realiseringen følger kravene i "Realisering i SOSI-foramt 5.0" <<SOSI-FORMAT>>. Under en utlisting av SOSI-formatrealiseringen:
+
+include::SOSIformatRealisering.adoc[]
+
+
+[appendix]
 == GML-realisering
 
 GML-realiseringen følger kravene i "Realisering i GML-format 5.0" <<SOSI-GML>>. Realiseringen defineres av følgende filer:
@@ -272,12 +280,6 @@ GML-realiseringen følger kravene i "Realisering i GML-format 5.0" <<SOSI-GML>>.
 * link:{skjema-url}/FKBAR5.xsd[GML-Schema]
 * link:{skjema-url}/eksempel/[Katalog med eksempelfiler]
 
-[appendix]
-== SOSI-format-realisering
-
-SOSI-realiseringen følger kravene i "Realisering i SOSI-foramt 5.0" <<SOSI-FORMAT>>. Under en utlisting av SOSI-formatrealiseringen:
-
-include::SOSIformatRealisering.adoc[]
 
 [appendix]
 == Lovlige egenskapskombinasjoner
