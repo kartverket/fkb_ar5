@@ -38,7 +38,8 @@ Tidligere versjoner:
 
 ==== Endringer fra FKB-AR5 5.0.1 til FKB-AR5 5.1
 
-* Lagt til taggen inlineOrByReference=byReference på alle assosiasjoner 
+* Lagt til taggen inlineOrByReference=byReference på alle assosiasjoner
+* Justeringer/forbedringer i dokumentasjonsmal. Dokumentasjon kun tilgjengelig på HTML-format.
 
 ==== Endringer fra FKB-AR5 5.0 til FKB-AR5 5.0.1
 
